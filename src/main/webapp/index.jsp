@@ -118,6 +118,11 @@
 		<td><input id ="email" type="text" name="emailId"><br><span id="emaillocation" style="color: red"></span></td>
 		</tr>
 		<tr>
+		<td>ContactNo</td>
+		<td>:</td>
+		<td><input id ="con" type="number" name="contactNo"><br> <span id="contactlocation" style="color: red"></span></td></td>
+		</tr>
+		<tr>
 		<td>DOB</td>
 		<td>:</td>
 		<td><input id ="dob" type="date" name="dob"><br> <span id="doblocation" style="color: red"></span></td>
@@ -134,12 +139,12 @@
 	   <tr>
 	   <td>Password</td>
 	   <td>:</td>
-	   <td><input type="text" name="password"><br><span id="passwordlocation" style="color: red"></span> </td>
+	   <td><input type="password" name="password"><br><span id="passwordlocation" style="color: red"></span> </td>
 	   </tr>
 	   <tr>
 	   <td>ConfirmPassword</td>
 	   <td>:</td>
-	   <td><input type="text" name="confirmPassword"><br><span id="cpasswordlocation" style="color: red"></span></td>
+	   <td><input type="password" name="confirmPassword"><br><span id="cpasswordlocation" style="color: red"></span></td>
 	   </tr>
 	   <tr>
 	   <td><input type="reset" value="Cancel"></td>
