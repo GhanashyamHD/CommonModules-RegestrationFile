@@ -31,7 +31,7 @@ public class CreateController {
 		String msg = service.validateandRegister(dto);
 			request.setAttribute("msg", msg);
 			logger.info(msg);
-			System.out.println(msg);
+		//	System.out.println(msg);
 //	 catch (Exception e) {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();

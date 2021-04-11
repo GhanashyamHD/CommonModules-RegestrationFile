@@ -48,7 +48,9 @@ public class AddDAOImpl implements AddDAO {
 		SessionFactory factory = bean.getObject();
 		logger.info("factory object created");
 		Session session = factory.openSession();
+		logger.info("session object created");
 		Transaction transaction = session.beginTransaction();
+		logger.info("transaction object created");
 	Query query=session.createQuery("select ae from AddEntity ae where ae.sportType = :sportType");
 	query.setParameter("sportType", sportType);
 	List<AddEntity> dto = query.list();

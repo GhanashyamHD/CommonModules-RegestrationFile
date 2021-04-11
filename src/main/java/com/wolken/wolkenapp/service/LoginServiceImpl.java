@@ -26,7 +26,9 @@ public class LoginServiceImpl implements LoginService {
 		if (entity1 != null) {
 			logger.info(dto.getUserName());
 			if (dto.getUserName().equals(entity1.getUserName())) {
+				logger.info(entity1.getUserName());
 				if (dto.getPassword().equals(entity1.getPassword())) {
+					 logger.info(entity1.getPassword());
 					return dto.getUserName();
 				} else {
 					return "Password is wrong";

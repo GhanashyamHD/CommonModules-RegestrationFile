@@ -23,7 +23,7 @@ public class UpdateByIdController {
 	
 	@RequestMapping("/email.ghd")
 	public String getController(HttpServletRequest request) {
-		logger.info("inside update controller");
+		logger.info("inside email controller");
 		String emailId = (String) request.getParameter("emailId");
 		logger.info("getting emailid");
 	   CreateAccountEntity entity= service.validateAndGetByEmail(emailId);
@@ -40,8 +40,13 @@ public class UpdateByIdController {
 	 }
 	@RequestMapping("/update.ghd")
 	public String updateController(UpdateDTO dto, HttpServletRequest request) {
+		logger.info("inside update controller");
 		String msg = service.validateandUpdate(dto);
+		logger.info(msg);
+
 		request.setAttribute("msg", msg);
+		logger.info("inside update controller setattribute");
+
 		return "home.jsp";
 		
 		
