@@ -21,7 +21,7 @@ public class CreateController {
 	Logger logger = Logger.getLogger(CreateController.class);
 	
 	@Autowired
-	CreateAccountDAO dao;
+     CreateAccountDAO dao;
 	@Autowired
 	CreateAccountService service;
 	
@@ -39,7 +39,7 @@ public class CreateController {
 //		}
 //		
 	
-	   return "home.jsp";
+	   return "login.jsp";
 	}
 
 }

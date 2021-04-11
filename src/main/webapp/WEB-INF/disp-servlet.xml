@@ -21,6 +21,8 @@
 		<property name="annotatedClasses">
 			<list>
 				<value>com.wolken.wolkenapp.entity.CreateAccountEntity</value>
+				<value>com.wolken.wolkenapp.entity.LoginEntity</value>
+				<value>com.wolken.wolkenapp.entity.AddEntity</value>
 			</list>
 		</property>
 	</bean>
