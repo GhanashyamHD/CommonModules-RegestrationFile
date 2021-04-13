@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@ page isELIgnored = "false" %>
 <!DOCTYPE html>
 <html>
 <style>
@@ -62,7 +63,7 @@ function validate() {
 				
 			}
 		    else if(! pass1.match(pass)){
-				document.getElementById("passwordlocation").innerHTML = alert("Enter Invalid Password");
+				document.getElementById("passwordlocation").innerHTML = alert("Enter valid Password");
 				status = false;
 				
 			}
@@ -81,9 +82,10 @@ function validate() {
 	<label style="text-align: left; background-color: DarkSalmon; height: 50px; font-size: 25px; font-style: oblique;">
 	NTCC Sports accessories
 	</label>
-	<a href ="logout.jsp" style ="padding-left: 1225px;size=20%;"><input type="button" value="logout" ></a>
+	<a href ="login.jsp" style ="padding-left: 1225px;size=20%;"><input type="button" value="logout" ></a>
 			                
 	</div><h1 align="center">Login Page</h1>
+	<h1> ${msg} </h1><br>
 <div class="center1">
 <form name = f1 action="login.ghd" onsubmit="return validate()" method="post">
 <table>

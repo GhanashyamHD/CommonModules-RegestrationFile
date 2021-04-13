@@ -25,10 +25,13 @@ public class LoginController {
 		String msg = service.validateandLogin(dto);
 			req.setAttribute("msg", msg);
 			logger.info(msg);
-	
+	if(msg.equals("Password is wrong") || msg.equals("User name not found") || msg.equals("User Name does not exits")) {
+		return "login.jsp";
+	}
+	else {
 		
 		return "home.jsp";
-		
+	}
 	}
 	
 

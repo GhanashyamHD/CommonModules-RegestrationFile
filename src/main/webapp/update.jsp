@@ -47,11 +47,17 @@ footer {
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<body style = "align:center;BACKGROUND-COLOR: cornsilk;">
+<script type = "text/javascript" >  
+    function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+</script>
 <div class ="header">
 	<label style="text-align: left; background-color: DarkSalmon; height: 50px; font-size: 25px; font-style: oblique;">
 	NTCC Sports accessories
 	</label>
-	<a href ="logout.jsp" style ="padding-left: 1225px;size=20%;"><input type="button" value="logout" ></a>
+	<a href ="login.jsp" style ="padding-left: 1225px;size=20%;"><input type="button" value="logout" ></a>
 			                
 	</div>
 <div class ="center1">

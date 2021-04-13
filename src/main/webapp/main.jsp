@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <style>
+
 body{
   background-image: url('sport.jpg');
    background-attachment: fixed;
@@ -79,6 +80,11 @@ function validate() {
 			
 		}
 </script>
+<script type = "text/javascript" >  
+    function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+</script>
 <div class ="header">
 	<label style="text-align: left; background-color: DarkSalmon; height: 80px; font-size: 25px; font-style: oblique;">
 	NTCC Sports Accessories
@@ -134,7 +140,7 @@ function validate() {
   <label>Contact us:6789034521 visit us:www.ntcc.com
   <a href="mailto:hege@ghd.com">hege@ghd.com</a>
  </label>
-  	<a href ="logout.jsp" style ="padding-left: 1225px;size:50%;"><input type="submit" value="logout"  size="25%"></a>
+  	<a href ="login.jsp" style ="padding-left: 1225px;size:50%;"><input type="submit" value="logout"  size="25%"></a>
 
   	
 	

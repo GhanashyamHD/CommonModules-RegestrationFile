@@ -46,6 +46,7 @@ public class UpdateByIdController {
 
 		request.setAttribute("msg", msg);
 		logger.info("inside update controller setattribute");
+		
 
 		return "home.jsp";
 		

@@ -28,7 +28,13 @@ public class AddController {
 		logger.info(msg);
 		request.setAttribute("msg", msg);
 		logger.info("inside addController setattribute"); 
-		return "home.jsp";
+		if(msg.equals("Invalid Item Name") || msg.equals("Invalid sportType") || msg.equals("price not entered") || msg.equals("Enter quantity ") || msg.equals("Invalid Ratings")) {
+		return "addprod.jsp";	
+		}
+		else {
+			return "home.jsp";
+		}
+		
 	
 		
 	}
